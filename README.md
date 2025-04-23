@@ -3,17 +3,21 @@
 
 ## 目录结构
 ```
-project-root/
-├── live/
+tencent-cloud-terraform/
+├── modules/
+│   └── vpc/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+├── environments/
 │   ├── dev/
-│   │   └── terragrunt.hcl
-│   ├── prod/
-│   │   └── terragrunt.hcl
-│   └── share/
-│       └── terragrunt.hcl
-└── modules/
-    └── vpc/
-        └── main.tf
+│   │   └── main.tf
+│   ├── uat/
+│   │   └── main.tf
+│   └── prod/
+│       └── main.tf
+├── terraform.tfvars
+└── main.tf
 ```
 
 ## 运行
