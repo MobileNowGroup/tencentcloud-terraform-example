@@ -16,8 +16,13 @@ tencent-cloud-terraform/
 │   │   └── main.tf
 │   └── prod/
 │       └── main.tf
+├── backend-config/
+│   ├── dev.tfbackend
+│   ├── uat.tfbackend
+│   └── prod.tfbackend
 ├── terraform.tfvars
-└── main.tf
+├── main.tf
+└── providers.tf
 ```
 
 ## 运行

@@ -12,3 +12,7 @@ provider "tencentcloud" {
   secret_key = "my-secret-key"
   region     = "ap-guangzhou"
 }
+
+locals {
+  env_name = terraform.workspace == "default" ? "dev" : terraform.workspace
+}
